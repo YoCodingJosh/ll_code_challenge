@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <nav class="navbar">
     <ul class="navbar-items">
       <li>
         <img src="@/assets/Logo-Blue.svg" />
@@ -23,19 +23,20 @@
         <button class="sign-up-button">Sign Up</button>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <style scoped>
 * {
   color: #001D5D;
+  background-color: white;
 }
 
 .navbar {
   background-color: white;
   overflow: hidden;
-  padding-left: 50px;
-  padding-right: 50px;
+  top: 0;
+  width: 100%;
 }
 
 .navbar-items {
