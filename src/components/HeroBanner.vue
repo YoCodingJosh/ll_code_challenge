@@ -6,6 +6,12 @@
       <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz, is
         an American singer and record producer. He released his debut project, an extended play entitled A.M. Paradox,
         in 2016.</p>
+      <div class="hero-action">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+          <button class="play-button"><img src="@/assets/BasicIcons/Play button triangle.svg" /></button>
+          <div class="hero-action-link-text">Watch Video</div>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -35,6 +41,10 @@
 .hero-content {
   position: relative;
   z-index: 100;
+  max-width: 567px;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .hero-container h1 {
@@ -42,14 +52,29 @@
   font-weight: 700;
   font-size: 64px;
   line-height: 72px;
-
-  padding-top: 10%;
-  padding-left: 10%;
 }
 
-.hero-container p {
-  padding-left: 10%;
-  max-width: 567px;
+.hero-content .hero-action a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.hero-content .hero-action a .hero-action-link-text {
+  display: inline-block;
+  padding-left: 24px;
+}
+
+.play-button {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid white;
+  fill: white;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
 }
 
 @keyframes zoomer {
