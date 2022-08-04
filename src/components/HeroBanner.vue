@@ -8,7 +8,7 @@
         in 2016.</p>
       <div class="hero-action">
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-          <button class="play-button"><img src="@/assets/BasicIcons/Play button triangle.svg" /></button>
+          <button class="play-button"><img :src="PlayButtonIcon" /></button>
           <div class="hero-action-link-text">Watch Video</div>
         </a>
       </div>
@@ -93,5 +93,5 @@
 </style>
 
 <script setup lang="ts">
-
+import PlayButtonIcon from '@/assets/BasicIcons/Play button triangle.svg';
 </script>
