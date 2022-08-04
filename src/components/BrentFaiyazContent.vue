@@ -1,7 +1,7 @@
 <template>
   <div class="content">
+    <img class="content-image" src="@/assets/Images/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL3JvdmkvMTA4MC8wMDA0LzMyNy9NSTAwMDQzMjcxNjAuanBn.webp" />
     <div class="content-body">
-      <img src="@/assets/Images/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL3JvdmkvMTA4MC8wMDA0LzMyNy9NSTAwMDQzMjcxNjAuanBn.webp" />
       <h1>Brent Faiyaz, So Far Gone</h1>
       <p>Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to
         Charlotte, North Carolina before ultimately settling in Los Angeles, California to further his music career. On
@@ -12,6 +12,7 @@
       <button @click="goToUrl('https://www.google.com/')" class="learn-more-button">Learn More</button>
     </div>
   </div>
+  <div class="clear-float"></div>
 </template>
 
 <style scoped>
@@ -21,6 +22,14 @@
 
 .content-body {
   max-width: 467px;
+  display: inline-block;
+}
+
+.content-image {
+  float: left;
+  padding-right: 32px;
+  max-width: 50%;
+  max-height: 454px;
 }
 
 .content h1 {
@@ -81,6 +90,10 @@
 .learn-more-button:hover {
   background: #42A418;
   color: white;
+}
+
+.clear-float {
+  clear: both;
 }
 </style>
 
