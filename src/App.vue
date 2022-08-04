@@ -3,11 +3,12 @@
   <main class="content">
     <HomePage />
   </main>
+  <Footer />
 </template>
 
 <style scoped>
 #navbar {
-  z-index: 100;
+  z-index: 1000;
 }
 #navbar.fixed {
   position: fixed;
@@ -24,6 +25,7 @@
 <script setup lang="ts">
 import HomePage from './components/HomePage.vue';
 import Navbar from './components/navbar/Navbar.vue';
+import Footer from './components/Footer.vue';
 
 import { onMounted } from 'vue';
 

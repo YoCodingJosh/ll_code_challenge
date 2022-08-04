@@ -2,7 +2,7 @@
   <nav class="navbar">
     <ul class="navbar-items">
       <li>
-        <img src="@/assets/Logo-Blue.svg" />
+        <a href="#"><img src="@/assets/Logo-Blue.svg" /></a>
       </li>
       <li>
         <NavbarItem :icon="NavbarItemIcon.Home" url="#" text="Home" />
@@ -57,6 +57,7 @@
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .sign-up-button:hover {
