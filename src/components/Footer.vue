@@ -17,8 +17,9 @@ footer {
 }
 
 footer hr {
-  margin-top: 25px;
+  margin-top: 60px;
   border: 1px solid #FFFFFF;
+  margin-bottom: 24px;
 }
 
 .bottom-text {

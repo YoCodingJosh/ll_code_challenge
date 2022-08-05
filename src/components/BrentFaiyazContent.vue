@@ -30,6 +30,7 @@
   padding-right: 32px;
   max-width: 50%;
   max-height: 454px;
+  object-fit: cover;
 }
 
 .content h1 {
