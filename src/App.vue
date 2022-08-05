@@ -1,5 +1,5 @@
 <template>
-  <Navbar id="navbar" />
+  <Navbar id="navbar" class="fixed" />
   <main class="content">
     <HomePage />
   </main>
@@ -9,6 +9,12 @@
 <style scoped>
 .content {
   padding-top: 80px;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    padding-top: 0px;
+  }
 }
 </style>
 

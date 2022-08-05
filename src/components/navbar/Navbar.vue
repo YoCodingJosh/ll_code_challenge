@@ -45,8 +45,8 @@
   position: fixed;
 }
 
-.navbar.fixed ul li {
-  height: 80px;
+#navbar.fixed.responsive {
+  height: auto;
 }
 
 #navbar-items {
@@ -100,7 +100,7 @@
 
   .navbar-responsive-toggle-button {
     font-size: xx-large;
-    z-index: 1111;
+    z-index: 1200;
     display: block;
     width: 50px;
     height: 50px;
@@ -111,8 +111,18 @@
     cursor: pointer;
   }
 
+  #navbar-items li {
+    padding-bottom: 10px;
+  }
+
   #navbar .responsive {
-    height: 100%;
+    overflow: auto;
+    z-index: 1111;
+    height: auto;
+  }
+
+  #navbar.fixed.responsive ul li {
+    display: block;
   }
 }
 </style>
@@ -139,6 +149,6 @@ onMounted(() => {
 });
 
 function toggleResponsiveNavbar() {
-  document.getElementById('navbar-items')!.classList.toggle('responsive');
+  document.getElementById('navbar')!.classList.toggle('responsive');
 }
 </script>
