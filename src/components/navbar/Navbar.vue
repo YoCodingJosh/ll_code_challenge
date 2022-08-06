@@ -121,7 +121,7 @@
     height: auto;
   }
 
-  #navbar.fixed.responsive ul li {
+  #navbar.responsive ul li {
     display: block;
   }
 }
