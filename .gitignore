@@ -26,3 +26,6 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Prod env doesn't need to be checked in to version control
+.env
