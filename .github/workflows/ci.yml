@@ -17,7 +17,7 @@ jobs:
       - name: Install NPM dependencies 💾
         run: npm ci
       - name: Set up API key 🕵️‍♂️🔐
-        run: cat "VITE_GOOGLE_API_KEY=${{ secrets.GOOGLE_MAPS_API_KEY }}" >> .env
+        run: echo "VITE_GOOGLE_API_KEY=${{ secrets.GOOGLE_MAPS_API_KEY }}" >> .env
       - name: Build it 🛠️
         run: npm run build
       - name: Deploy 🚀
