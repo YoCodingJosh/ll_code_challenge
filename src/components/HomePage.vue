@@ -1,6 +1,9 @@
 <template>
-  <HeroBanner />
-  <BrentFaiyazContent />
+  <main>
+    <HeroBanner />
+    <BrentFaiyazContent />
+    <NewReleases />
+  </main>
 </template>
 
 <style scoped>
@@ -9,4 +12,5 @@
 <script setup lang="ts">
 import HeroBanner from './HeroBanner.vue';
 import BrentFaiyazContent from './BrentFaiyazContent.vue';
+import NewReleases from './NewReleases.vue';
 </script>

@@ -2,7 +2,7 @@
   <div class="content">
     <img class="content-image" src="@/assets/Images/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL3JvdmkvMTA4MC8wMDA0LzMyNy9NSTAwMDQzMjcxNjAuanBn.webp" />
     <div class="content-body">
-      <h1>Brent Faiyaz, So Far Gone</h1>
+      <h3>Brent Faiyaz, So Far Gone</h3>
       <p>Faiyaz began uploading his music onto SoundCloud in 2014 and moved from his hometown Columbia, Maryland to
         Charlotte, North Carolina before ultimately settling in Los Angeles, California to further his music career. On
         January 19, 2015, he released his debut single "Allure". On June 1, 2016, Faiyaz released "Invite Me", the lead
@@ -33,7 +33,7 @@
   object-fit: cover;
 }
 
-.content h1 {
+.content h3 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -46,13 +46,6 @@
 
   /* Blue */
   color: #001D5D;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .content p {

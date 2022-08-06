@@ -1,8 +1,6 @@
 <template>
   <Navbar id="navbar" class="fixed" />
-  <main class="content">
-    <HomePage />
-  </main>
+  <HomePage class="content" />
   <Footer></Footer>
 </template>
 
