@@ -63,7 +63,8 @@ p {
 </style>
 
 <script setup lang="ts">
-import { Splide, SplideSlide, SplideTrack } from '@splidejs/vue-splide';
+// @ts-ignore
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import type { Options } from '@splidejs/vue-splide';
 
 import Trapsoul from './releases/Trapsoul.vue'
