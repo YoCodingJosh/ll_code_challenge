@@ -5,22 +5,35 @@
       <h1>Get In Touch</h1>
       <p>New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple
         Music & Spotify.</p>
-      <div class="form">
+      <div>
         <form>
-          <div class="form-group">
-            <div><label for="firstName">First Name</label></div>
-            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+          <div class="form-row">
+            <div class="form-group">
+              <div><label for="firstName">First Name</label></div>
+              <input type="text" class="form-control" id="firstName" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <div><label for="lastName">Last Name</label></div>
+              <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <div><label for="email">Email Address</label></div>
+              <input type="email" class="form-control" id="email" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <div><label for="reason">Reason for Contacting</label></div>
+              <select class="form-control" id="reason">
+                <option selected="true" disabled="true">Select One</option>
+                <option>Inquiry</option>
+                <option>Feedback</option>
+                <option>Something crazy to fit here.</option>
+              </select>
+            </div>
           </div>
           <div class="form-group">
-            <div><label for="lastName">Last Name</label></div>
-            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" class="form-control" id="email" placeholder="Email Address">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
+            <div><label for="message">Message</label></div>
             <textarea class="form-control" id="message" rows="3" placeholder="Write a brief message..."></textarea>
           </div>
           <button class="learn-more" type="submit" @click.prevent="sendMessage">Learn
@@ -54,7 +67,8 @@ h1 {
   color: #001D5D;
 }
 
-input {
+input,
+select {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -64,6 +78,25 @@ input {
   /* Blue */
 
   color: #001D5D;
+
+  height: 32px;
+}
+
+textarea {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* Blue */
+
+  color: #001D5D;
+}
+
+option:disabled {
+  color: gray;
+  background-color: whitesmoke;
 }
 
 p {
@@ -117,6 +150,10 @@ p {
   width: 168px;
 }
 
+form {
+  padding-bottom: 15px;
+}
+
 .form-group label {
   /* Body/Regular/Small-Reg */
 
@@ -131,6 +168,24 @@ p {
   /* Medium Gray */
 
   color: #777777;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+@media (max-width: 600px) {
+  .pic {
+    width: auto;
+    height: 10%;
+    padding-bottom: 25px;
+  }
 }
 </style>
 
