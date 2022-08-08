@@ -95,6 +95,10 @@
   .hero-container {
     padding-top: 80px;
   }
+
+  .hero-image {
+    object-fit: cover;
+  }
 }
 </style>
 
