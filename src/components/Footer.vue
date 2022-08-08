@@ -45,16 +45,16 @@
       <span>Terms &amp; Conditions</span>
       <span class="social-icons">
         <a href="https://www.instagram.com/snyderrecording" target="_blank">
-          <img class="social-icon" src="@/assets/SocialIcons/007-instagram 1.svg" />
+          <img class="social-icon" :src="InstagramIcon" />
         </a>
         <a href="https://www.youtube.com/snyderrecording" target="_blank">
-          <img class="social-icon" src="@/assets/SocialIcons/009-youtube 1.svg" />
+          <img class="social-icon" :src="YouTubeIcon" />
         </a>
         <a href="https://www.twitter.com/snyderrecording" target="_blank">
-          <img class="social-icon" src="@/assets/SocialIcons/004-twitter 1.svg" />
+          <img class="social-icon" :src="TwitterIcon" />
         </a>
         <a href="https://www.facebook.com/snyderrecording" target="_blank">
-          <img class="social-icon last-social-icon" src="@/assets/SocialIcons/002-facebook 1.svg" />
+          <img class="social-icon last-social-icon" :src="FacebookIcon" />
         </a>
       </span>
       <div class="clear-float"></div>
@@ -181,4 +181,8 @@ footer hr {
 </style>
 
 <script setup lang="ts">
+import InstagramIcon from '@/assets/SocialIcons/007-instagram 1.svg';
+import YouTubeIcon from '@/assets/SocialIcons/009-youtube 1.svg';
+import TwitterIcon from '@/assets/SocialIcons/004-twitter 1.svg';
+import FacebookIcon from '@/assets/SocialIcons/002-facebook 1.svg';
 </script>
