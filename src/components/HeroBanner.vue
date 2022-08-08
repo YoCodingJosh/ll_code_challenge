@@ -90,6 +90,12 @@
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .hero-container {
+    padding-top: 80px;
+  }
+}
 </style>
 
 <script setup lang="ts">
