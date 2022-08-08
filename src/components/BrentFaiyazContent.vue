@@ -89,6 +89,13 @@
 .clear-float {
   clear: both;
 }
+
+@media (max-width: 600px) {
+  .content-image {
+    float: none;
+    max-width: 100%;
+  }
+}
 </style>
 
 <script setup lang="ts">
