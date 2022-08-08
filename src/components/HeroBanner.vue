@@ -28,7 +28,7 @@
 .hero-image {
   width: 100%;
   height: 80vh;
-  object-fit: fill;
+  object-fit: cover;
   animation-name: zoomer;
   animation-duration: 12s;
   animation-timing-function: ease-in-out;
@@ -94,10 +94,6 @@
 @media screen and (max-width: 600px) {
   .hero-container {
     padding-top: 80px;
-  }
-
-  .hero-image {
-    object-fit: cover;
   }
 }
 </style>
