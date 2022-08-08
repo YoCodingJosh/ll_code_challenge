@@ -93,7 +93,7 @@
 
 @media screen and (max-width: 600px) {
   .hero-container {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 </style>
