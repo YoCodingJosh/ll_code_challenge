@@ -182,9 +182,10 @@ form {
 
 @media (max-width: 600px) {
   .pic {
-    width: auto;
-    height: 10%;
+    width: 100%;
+    height: 250px;
     padding-bottom: 25px;
+    object-fit: cover;
   }
 }
 </style>
