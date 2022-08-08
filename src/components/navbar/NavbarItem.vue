@@ -8,10 +8,11 @@
 <style scoped>
 .navbar-item {
   cursor: pointer;
+  transition: transform .2s;
 }
 
 .navbar-item:hover {
-  background-color: #FAFAFA;
+  transform: scale(1.25);
 }
 
 .navbar-item-icon {

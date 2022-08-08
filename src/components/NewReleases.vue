@@ -55,10 +55,12 @@ p {
 
 .splide__slide {
   opacity: 0.5;
+  transition: 0.25s;
 }
 
 .splide__slide.is-active {
   opacity: 1;
+  transition: 0.25s;
 }
 </style>
 

@@ -69,6 +69,7 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 2px;
+  transition: 0.3s;
 }
 
 .sign-up-button:hover {

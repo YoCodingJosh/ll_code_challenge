@@ -128,26 +128,22 @@ p {
 }
 
 .learn-more {
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
   background: #D9F0D0;
   border-radius: 2px;
-
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-
   text-align: center;
-
-  /* Green */
-
+  text-decoration: none;
   color: #42A418;
-
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 32px;
+  border: none;
+  transition: 0.3s;
   width: 168px;
+}
+
+.learn-more:hover {
+  background-color: #42A418;
+  color: white;
 }
 
 form {

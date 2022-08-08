@@ -8,7 +8,7 @@
         in 2016.</p>
       <div class="hero-action">
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-          <button class="play-button"><img :src="PlayButtonIcon" /></button>
+          <button class="play-button"><img class="play-button-icon" :src="PlayButtonIcon" /></button>
           <div class="hero-action-link-text">Watch Video</div>
         </a>
       </div>
@@ -75,6 +75,22 @@
   width: 60px;
   height: 60px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.play-button-icon:hover {
+  animation-name: noscope;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes noscope {
+  100% { transform: rotate(360deg); } 
+}
+
+.play-button:hover {
+  background-color: #D9F0D0;
 }
 
 @keyframes zoomer {

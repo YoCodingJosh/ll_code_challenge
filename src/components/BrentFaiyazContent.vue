@@ -79,6 +79,7 @@
   cursor: pointer;
   padding: 15px 32px;
   border: none;
+  transition: 0.3s;
 }
 
 .learn-more-button:hover {
